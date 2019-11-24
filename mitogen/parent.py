@@ -2489,6 +2489,9 @@ class Router(mitogen.core.Router):
     def lxd(self, **kwargs):
         return self.connect(u'lxd', **kwargs)
 
+    def multipass(self, **kwargs):
+        return self.connect(u'multipass', **kwargs)
+
     def setns(self, **kwargs):
         return self.connect(u'setns', **kwargs)
 
